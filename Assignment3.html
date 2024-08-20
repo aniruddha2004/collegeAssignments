@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <a href="Assignment2.html">Student Registration Form</a>
+    <form action="#">
+      <label for="fname">First Name : </label>
+      <input
+        type="text"
+        id="fname"
+        placeholder="Enter your first name"
+        required
+      /><br><br>
+      <label for="lname">Last Name : </label>
+      <input
+        type="text"
+        id="lname"
+        placeholder="Enter your last name"
+        required
+      /><br><br>
+      <label for="email">Email : </label>
+      <input
+        type="email"
+        id="email"
+        placeholder="It should contain @"
+        required
+      /><br><br>
+      <label for="mobile">Mobile : </label>
+      <input
+        type="text"
+        id="mobile"
+        placeholder="Only 10 digits are allowed"
+        pattern="[0-9]{10}"
+        required
+      /><br><br>
+      <label
+        >Gender :
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="female">Female</label>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="Female"
+          required
+        /> </label
+      ><br><br>
+      <label for="dob">Date Of Birth : </label>
+      <input
+        type="date"
+        id="dob"
+        max="2024-08-13"
+        min="2012-12-12"
+        required
+      /><br><br>
+      <label for="address">Address : </label>
+      <textarea
+        name="address"
+        id="address"
+        cols="30"
+        rows="10"
+        maxlength="500"
+        style="resize: vertical"
+      ></textarea
+      ><br><br>
+      <label for="city">City : </label>
+      <select name="city" id="city">
+        <option value="Kolkata">Kolkata</option>
+        <option value="Noida">Noida</option>
+        <option value="Gurgaon">Gurgaon</option>
+        <option value="Indore">Indore</option></select
+      ><br><br>
+      <label for="pin">Area PIN : </label>
+      <input type="text" id="pin" pattern="[0-9]{1,6}" required /><br><br>
+      <label for="state">State : </label>
+      <input type="text" id="state" required /><br><br>
+      <label for="qualification">Qualification : </label>
+      <select name="qualification" id="qualification">
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="bca">BCA</option>
+        <option value="mca">MCA</option></select
+      ><br><br>
+      <label for="specialization"
+        >Specialization :
+        <input type="checkbox" name="computerScience" id="cs" />
+        <label for="cs">Computer Science</label>
+        <input type="checkbox" name="informationTechnology" id="it" />
+        <label for="it">Information Technology</label>
+        <input type="checkbox" name="computerArchitecture" id="ca" />
+        <label for="ca">Computer Architecture</label>
+        <input type="checkbox" name="teleCommunication" id="tc" />
+        <label for="tc">Tele Communication</label> </label
+      ><br><br>
+      <label for="password">Password : </label>
+      <input type="password" id="password" maxlength="8" required /><br><br>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
